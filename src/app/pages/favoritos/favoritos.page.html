@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <div slot="start" class="instagram-title">
+      FAVORITOS
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+      </ion-button>
+      <ion-button color="dark">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div>
+      <h1>Mis Juegos Favoritos</h1>
+      <ion-card *ngFor="let game of games">
+        <img [alt]="game.titulo" [src]="game.imagen" />
+        <ion-card-header>
+          <ion-card-title>{{ game.titulo }}</ion-card-title>
+          <ion-card-subtitle>{{ game.subtitle }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ game.descripcion }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

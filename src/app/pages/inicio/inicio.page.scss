@@ -1,0 +1,126 @@
+.instagram-title {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    margin-left: 16px;
+    margin-top: 8px;
+    align-self: flex-start;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.story-list {
+    padding: 16px 0 8px;
+    border-bottom: 1px solid #efefef;
+
+    .scroll-horizontal {
+        padding-left: 16px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        .scroll-item {
+            position: relative;
+            display: inline-block;
+            margin-right: 16px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .item-label {
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        ion-avatar {
+            &.has-update {
+                padding: 2px;
+            }
+        }
+    }
+}
+
+ion-card {
+    margin: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    ion-card-header {
+        padding: 16px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    ion-card-content {
+        padding: 16px;
+        line-height: 1.4;
+        flex-grow: 1;
+    }
+
+    ion-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        border-top: 1px solid #ddd;
+    }
+
+    ion-note {
+        font-size: 12px;
+    }
+
+    b {
+        font-size: 15px;
+    }
+}
+
+.form-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.continuar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; // Asegura que los elementos se separen
+    padding: 0 16px;
+    margin-top: 16px;
+    position: relative;
+  }
+  
+  .continuar-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .add-game-button {
+    position: absolute;
+    right: 16px; // Lo pega a la derecha
+    background: transparent; // Mismo color que el fondo
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+  }
+  

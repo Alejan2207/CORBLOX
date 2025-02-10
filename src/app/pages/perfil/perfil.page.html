@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <div slot="start" class="instagram-title">
+      PERFIL
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+      </ion-button>
+      <ion-button color="dark">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-banner">
+        <img src="assets/images/teto.png" alt="Profile Banner">
+      </div>
+      <div class="profile-avatar-container">
+        <ion-avatar class="profile-avatar">
+          <img src="assets/images/teto.png" alt="Profile Picture">
+        </ion-avatar>
+        <div class="status-indicator"></div>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    
+    <!-- Profile Info -->
+    <div class="profile-info">
+      <div class="profile-name-container">
+        <h2 class="profile-name">GaelAlejandro2207</h2>
+        <span class="profile-tag">gael2207</span>
+      </div>
+      
+      <!-- Action Buttons -->
+      <div class="profile-actions">
+        <ion-button fill="outline" class="add-status-btn">
+          <ion-icon name="add-outline"></ion-icon>
+          Añadir estado
+        </ion-button>
+        <ion-button fill="outline" class="edit-profile-btn">
+          <ion-icon name="create-outline"></ion-icon>
+          Editar perfil
+        </ion-button>
+      </div>
+
+      <!-- Profile Sections -->
+      <div class="profile-sections">
+        <div class="section">
+          <h3>Miembro desde</h3>
+          <p>31 ene 2023</p>
+        </div>
+        
+        <div class="section">
+          <h3>Conexiones</h3>
+          <div class="connection-item">
+            <img src="assets/images/teto.png" alt="Connection">
+            <span>elcuacharaxdlol</span>
+            <ion-icon name="open-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Nota</h3>
+          <p class="note-placeholder">Haz clic para añadir una nota</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="profile-tabs">
+      <ion-segment>
+        <ion-segment-button value="about">
+          <ion-label>Sobre mí</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="activity">
+          <ion-label>Actividad</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </div>
+</ion-content>

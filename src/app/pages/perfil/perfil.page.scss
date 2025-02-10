@@ -1,0 +1,173 @@
+.instagram-title {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  margin-left: 16px;
+  margin-top: 8px;
+  align-self: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.profile-container {
+  background-color: black;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.profile-header {
+  position: relative;
+  height: 120px;
+  
+  .profile-banner {
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: #232428; // Fallback color si la imagen no carga
+    }
+  }
+}
+
+.profile-avatar-container {
+  position: relative;
+  margin-top: -40px;
+  margin-left: 16px;
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #313338;
+    border-radius: 50%;
+    
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .status-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #747f8d;
+    border: 4px solid #313338;
+    border-radius: 50%;
+  }
+}
+
+.profile-info {
+  padding: 16px;
+  
+  .profile-name-container {
+    margin-top: 40px;
+    
+    .profile-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+    }
+    
+    .profile-tag {
+      font-size: 14px;
+      color: #b5bac1;
+    }
+  }
+}
+
+.profile-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  
+  ion-button {
+    --background: #2b2d31;
+    --color: #fff;
+    --border-color: #1e1f22;
+    --border-radius: 4px;
+    font-size: 14px;
+    text-transform: none;
+    height: 32px;
+    
+    ion-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+.profile-sections {
+  margin-top: 24px;
+  
+  .section {
+    margin-bottom: 24px;
+    
+    h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #b5bac1;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    
+    p {
+      font-size: 14px;
+      color: #dbdee1;
+      margin: 0;
+    }
+  }
+}
+
+.connection-item {
+  display: flex;
+  align-items: center;
+  background: #2b2d31;
+  padding: 8px;
+  border-radius: 4px;
+  
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  span {
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  ion-icon {
+    color: #b5bac1;
+    font-size: 16px;
+  }
+}
+
+.note-placeholder {
+  color: #949ba4 !important;
+  font-style: italic;
+}
+
+.profile-tabs {
+  border-top: 1px solid #1e1f22;
+  
+  ion-segment {
+    --background: transparent;
+    
+    ion-segment-button {
+      --color: #b5bac1;
+      --color-checked: #fff;
+      --indicator-color: #5865f2;
+      text-transform: none;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+  }
+}

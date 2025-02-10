@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <div slot="start" class="instagram-title">
+      RECOMENDACIONES
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+      </ion-button>
+      <ion-button color="dark">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Filtros horizontales -->
+  <div class="story-list">
+    Filtros
+    <div class="scroll-horizontal">
+      <div class="scroll-item" *ngFor="let filter of filters">
+        <ion-chip [color]="filter.selected ? 'primary' : 'medium'" (click)="toggleFilter(filter)">
+          {{ filter.name }}
+        </ion-chip>
+      </div>
+    </div>
+  </div>
+
+  <!-- Juegos recomendados -->
+  <div>
+    <h1 class="section-title">Juegos Recomendados</h1>
+    <ion-card *ngFor="let game of filteredGames">
+      <img [alt]="game.titulo" [src]="game.imagen" />
+      <ion-card-header>
+        <ion-card-title>{{ game.titulo }}</ion-card-title>
+        <ion-card-subtitle>{{ game.subtitle }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        {{ game.descripcion }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
